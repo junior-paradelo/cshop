@@ -1,5 +1,11 @@
 ---
-
+const links = [
+  { name: "Café en cápsulas", url: "#" },
+  { name: "Café en grano", url: "#" },
+  { name: "Café molido", url: "#" },
+  { name: "Packs", url: "#" },
+  { name: "Accesorios", url: "#" },
+];
 ---
 
 <nav class="bg-stone-500 font-serif">
@@ -8,31 +14,16 @@
       <div class="flex flex-1 items-center justify-center">
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a
-              href="#"
-              class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
-              >Café en cápsulas</a
-            >
-            <a
-              href="#"
-              class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
-              >Café en grano</a
-            >
-            <a
-              href="#"
-              class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
-              >Café molido</a
-            >
-            <a
-              href="#"
-              class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
-              >Packs</a
-            >
-            <a
-              href="#"
-              class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
-              >Accesorios</a
-            >
+            {
+              links.map((link) => (
+                <a
+                  href={link.url}
+                  class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
+                >
+                  {link.name}
+                </a>
+              ))
+            }
           </div>
         </div>
       </div>

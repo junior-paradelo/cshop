@@ -1,58 +1,54 @@
 ---
+const bags = [
+  {
+    name: "Specialty Beany Grano",
+    price: "$ 14,00",
+    image: "/public/bag-specialty-grano.webp",
+    alt: "bag item specialty grano",
+  },
+  {
+    name: "Specialty Beany Molido",
+    price: "$ 14,00",
+    image: "/public/bag-specialty-molido.webp",
+    alt: "bag item specialty molido",
+  },
+  {
+    name: "Original Classic Grano",
+    price: "$ 9,00",
+    image: "/public/bag-original-classic-grano.webp",
+    alt: "bag item original grano",
+  },
+  {
+    name: "Original Classic Molido",
+    price: "$ 9,00",
+    image: "/public/bag-original-classic-molido.webp",
+    alt: "bag item original molido",
+  },
+];
 
+const title = "Café molido y en grano";
 ---
 
 <div class="bg-stone-100">
   <div class="mx-auto max-w-7xl py-24 font-serif">
     <div class="text-center">
       <h1 class="font-semibold text-5xl text-balance text-stone-700">
-        Café molido y en grano
+        {title}
       </h1>
       <section class="flex flex-wrap justify-center">
-        <div class="basis-md">
-          <img
-            class="hover:scale-110 hover:transition-transform"
-            src="/public/bag-specialty-grano.webp"
-            alt="bag item grano"
-          />
-          <h2 class="font-semibold text-4xl text-stone-700">
-            Specialty Beany Grano
-          </h2>
-          <p class="font-semibold text-2xl text-stone-700">$ 14,00</p>
-        </div>
-        <div class="basis-md">
-          <img
-            class="hover:scale-110 hover:transition-transform"
-            src="/public/bag-specialty-molido.webp"
-            alt="bag item molido"
-          />
-          <h2 class="font-semibold text-4xl text-stone-700">
-            Specialty Beany Molido
-          </h2>
-          <p class="font-semibold text-2xl text-stone-700">$ 14,00</p>
-        </div>
-        <div class="basis-md">
-          <img
-            class="hover:scale-110 hover:transition-transform"
-            src="/public/bag-original-classic-grano.webp"
-            alt="bag item grano"
-          />
-          <h2 class="font-semibold text-4xl text-stone-700">
-            Original Classic Grano
-          </h2>
-          <p class="font-semibold text-2xl text-stone-700">$ 9,00</p>
-        </div>
-        <div class="basis-md">
-          <img
-            class="hover:scale-110 hover:transition-transform"
-            src="/public/bag-original-classic-molido.webp"
-            alt="bag item molido"
-          />
-          <h2 class="font-semibold text-4xl text-stone-700">
-            Original Classic Molido
-          </h2>
-          <p class="font-semibold text-2xl text-stone-700">$ 9,00</p>
-        </div>
+        {
+          bags.map((item) => (
+            <div class="basis-md">
+              <img
+                class="hover:scale-110 hover:transition-transform"
+                src={item.image}
+                alt={item.alt}
+              />
+              <h2 class="font-semibold text-4xl text-stone-700">{item.name}</h2>
+              <p class="font-semibold text-2xl text-stone-700">{item.price}</p>
+            </div>
+          ))
+        }
       </section>
     </div>
   </div>

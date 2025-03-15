@@ -1,14 +1,14 @@
 ---
 const links = [
-  { name: "Café en cápsulas", url: "#" },
-  { name: "Café en grano", url: "#" },
-  { name: "Café molido", url: "#" },
-  { name: "Packs", url: "#" },
-  { name: "Accesorios", url: "#" },
+  { name: "Café en cápsulas", url: "#capsules" },
+  { name: "Café en grano", url: "#bag-coffee" },
+  { name: "Café molido", url: "#bag-coffee" },
+  { name: "Packs", url: "#packs" },
+  { name: "Accesorios", url: "#accesories" },
 ];
 ---
 
-<nav class="bg-stone-500 font-serif">
+<nav class="bg-stone-500">
   <div class="mx-auto max-w-7xl px-2">
     <div class="flex h-16 items-center justify-between">
       <div class="flex flex-1 items-center justify-center">
@@ -18,7 +18,7 @@ const links = [
               links.map((link) => (
                 <a
                   href={link.url}
-                  class="rounded-md hover:bg-stone-700 px-3 py-2 text-md font-bold text-stone-200 hover:text-white"
+                  class="rounded-md hover:bg-stone-700 px-3 py-2 text-2xl font-light text-stone-200 hover:text-white"
                 >
                   {link.name}
                 </a>

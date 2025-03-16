@@ -1,0 +1,30 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Detail from "@/components/Detail.astro";
+
+const title = "café en grano";
+const items = [
+  {
+    text: "Specialty Beany Grano",
+    price: "14,00",
+    src: "/bag-specialty-grano.webp",
+    alt: "bag item specialty grano",
+  },
+  {
+    text: "Original Classic Grano",
+    price: "9,00",
+    src: "/bag-original-classic-grano.webp",
+    alt: "bag item original grano",
+  },
+];
+const reviews = 14;
+---
+
+<Layout>
+  <Header />
+  <Detail title={title} items={items} reviews={reviews}/>
+  <Footer />
+</Layout>

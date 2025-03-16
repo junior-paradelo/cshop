@@ -1,0 +1,43 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Detail from "@/components/Detail.astro";
+
+const title = "cápsulas";
+
+const items = [
+  {
+    src: "/capsule-original.webp",
+    alt: "capsule item original",
+    text: "Original Classic",
+    price: "8,50",
+  },
+  {
+    src: "/capsule-working.webp",
+    alt: "capsule item working",
+    text: "Working Beany",
+    price: "9,50",
+  },
+  {
+    src: "/capsule-colombia.webp",
+    alt: "capsule item colombia",
+    text: "Colombia",
+    price: "9,50",
+  },
+  {
+    src: "/capsule-cloudy.webp",
+    alt: "capsule item cloudy",
+    text: "Cloudy Beany",
+    price: "9,00",
+  },
+];
+const reviews = 6;
+---
+
+<Layout>
+  <Header />
+  <Detail title={title} items={items} reviews={reviews}/>
+  <Footer />
+</Layout>

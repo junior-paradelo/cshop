@@ -1,0 +1,32 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Detail from "@/components/Detail.astro";
+
+const title = "accesorios";
+
+const items = [
+  {
+    src: "/brown-cap.webp",
+    alt: "brown cap item",
+    text: "Beany's dinner cap",
+    price: "27,00",
+  },
+  {
+    src: "/red-cap.webp",
+    alt: "red cap item",
+    text: "Beany's vintage cap",
+    price: "27,00",
+  },
+];
+const reviews = 2;
+const rating = 5;
+---
+
+<Layout>
+  <Header />
+  <Detail title={title} items={items} reviews={reviews} rating={rating} />
+  <Footer />
+</Layout>

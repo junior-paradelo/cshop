@@ -1,0 +1,38 @@
+---
+import "@/styles/global.css";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Detail from "@/components/Detail.astro";
+
+const title = "packs";
+
+const items = [
+  {
+    src: "/pack-247-grano.webp",
+    alt: "pack 24/7 grano",
+    text: "24/7 Mix Grano",
+    price: "29,50",
+  },
+  {
+    src: "/pack-grand-original.webp",
+    alt: "pack grand original",
+    text: "Grand Original Party",
+    price: "34,00",
+  },
+  {
+    src: "/pack-party-grano.webp",
+    alt: "pack party grano",
+    text: "Party Mix Grano",
+    price: "29,50",
+  },
+];
+const reviews = 9;
+const rating = 4;
+---
+
+<Layout>
+  <Header />
+  <Detail title={title} items={items} reviews={reviews} rating={rating} />
+  <Footer />
+</Layout>

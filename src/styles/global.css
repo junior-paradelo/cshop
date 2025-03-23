@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-body {
-    font-family: 'VT323', monospace;
+@theme {
+    --font-sans: 'VT323', monospace;
 }

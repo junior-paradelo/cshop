@@ -11,8 +11,10 @@ El proyecto fue creado con fines educativos y de práctica con tecnologías mode
 
 ## 📸 Capturas de Pantalla
 
-![Página Principal](./public/coffee-placeholder.webp)
-![Sección de Accesorios](./public/accesories-placeholder.webp)
+![Página principal](./public/readme/spa-placeholder.jpeg)
+![Sección de detalles](./public/readme/detail-placeholder.jpeg)
+![Sección de accesorios](./public/readme/accesories-placeholder.jpeg)
+![Error intuitivo](./public/readme/404.jpeg)
 
 ## 🛒 Secciones del Sitio
 

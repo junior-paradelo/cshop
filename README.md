@@ -62,7 +62,7 @@ El proyecto fue creado con fines educativos y de práctica con tecnologías mode
 
 1. **Clonar el repositorio**
     ```bash
-    git clone https://github.com/tu-usuario/cshop.git
+    git clone https://github.com/junior-paradelo/cshop.git
     cd cshop
     ```
 
